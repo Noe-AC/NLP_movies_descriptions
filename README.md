@@ -9,7 +9,12 @@ On [Kaggle](https://www.kaggle.com) one can find some movies datasets:
 
 Using Google's [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)) algorithm to embed the movies descriptions in a vector space, it is possible to do various things among which:
 
-1. Compute the pairwise distance between the descriptions of two movies. This can be used to find the *"closest"* movies to a given movie. For example, the five closest Criterion movies to [Fiend Without a Face](https://www.imdb.com/title/tt0050393/?ref_=fn_al_tt_1) (1958, A. Crabtree) are [Scanners](https://www.imdb.com/title/tt0081455/?ref_=nv_sr_srsg_0) (1981, D. Cronenberg), [Godzilla vs. Hedorah](https://www.imdb.com/title/tt0067148/?ref_=nv_sr_srsg_0) (1971, Y. Banno & I. Honda), [Genocide](https://www.imdb.com/title/tt0063195/?ref_=nv_sr_srsg_0) (1968, K. Nihonmatsu), [Godzilla vs. Gigan](https://www.imdb.com/title/tt0068371/?ref_=nv_sr_srsg_0) (1972, J. Fukuda & Y. Banno & I. Honda), [Night of the Living Dead](https://www.imdb.com/title/tt0063350/?ref_=fn_al_tt_1) (1968, G. A. Romero). This can be used to get inspired to watch movies.
+1. Compute the pairwise distance between the descriptions of two movies. This can be used to find the closest movies to a given movie. For example, the five closest Criterion movies to [Fiend Without a Face](https://www.imdb.com/title/tt0050393/?ref_=fn_al_tt_1) (1958, A. Crabtree) are:
+    * [Scanners](https://www.imdb.com/title/tt0081455/?ref_=nv_sr_srsg_0) (1981, D. Cronenberg)
+    * [Godzilla vs. Hedorah](https://www.imdb.com/title/tt0067148/?ref_=nv_sr_srsg_0) (1971, Y. Banno & I. Honda)
+    * [Genocide](https://www.imdb.com/title/tt0063195/?ref_=nv_sr_srsg_0) (1968, K. Nihonmatsu)
+    * [Godzilla vs. Gigan](https://www.imdb.com/title/tt0068371/?ref_=nv_sr_srsg_0) (1972, J. Fukuda & Y. Banno & I. Honda)
+    * [Night of the Living Dead](https://www.imdb.com/title/tt0063350/?ref_=fn_al_tt_1) (1968, G. A. Romero).
 2. Do a dimensional reduction (e.g. [t-SNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) or [UMAP](https://umap-learn.readthedocs.io/en/latest/)) of the embedding to do a 2d scatterplot of the movies.
 
 Another thing that can be done is to embed a set of user queries in the same vector space.
